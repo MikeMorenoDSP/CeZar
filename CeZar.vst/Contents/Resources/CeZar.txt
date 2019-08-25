@@ -1,0 +1,7 @@
+type instrument;
+bus 0 2;
+code CZCZ;
+midiin true;
+compatibility 1.0.6;
+playhead false;
+key false;
