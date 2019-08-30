@@ -1,18 +1,16 @@
-#N canvas 271 30 666 723 10;
-#X obj 91 508 notein;
-#X obj 91 550 pack f f f;
-#X obj 91 571 s \$0-poly;
-#X obj 10 389 r \$0-poly;
-#X obj 10 410 route 1;
-#X obj 10 564 hip~ 3;
-#X obj 10 606 dac~ 1 2;
+#N canvas 271 30 683 676 10;
+#X obj 91 488 notein;
+#X obj 91 530 pack f f f;
+#X obj 91 551 s \$0-poly;
+#X obj 10 369 r \$0-poly;
+#X obj 10 390 route 1;
+#X obj 10 474 hip~ 3;
+#X obj 10 516 dac~ 1 2;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-env 441 float 0;
 #X coords 0 1 441 0 441 51 1 0 0;
 #X restore 11 20 graph;
-#X obj 10 585 *~ 0.7;
-#X obj 10 543 clip~ -1 1;
-#X obj 10 452 /~ 4;
+#X obj 10 495 *~ 0.7;
 #X obj 11 120 hradio 16 1 0 7 \$0-s-sus-1 \$0-r-sus-1 SUSTAIN 0 -6
 0 10 -261906 -1 -1 1;
 #X obj 27 150 hradio 16 1 0 7 \$0-s-end-1 \$0-r-end-1 END 0 -6 0 10
@@ -26,7 +24,7 @@
 #X obj 11 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-1-1 \$0-r-nbx-1-1 TIME 1
 0 -6 0 10 -261906 -1 -1 1 256;
 #X text 9 86 DCO;
-#X obj 91 529 poly 4 1;
+#X obj 91 509 poly 4 1;
 #N canvas 166 97 240 602 saw 0;
 #X obj 12 129 t b b b;
 #X obj 12 171 until;
@@ -131,7 +129,7 @@
 #X connect 42 0 44 0;
 #X connect 43 0 42 0;
 #X connect 44 0 20 0;
-#X restore 520 401 pd saw;
+#X restore 520 381 pd saw;
 #N canvas 501 82 342 650 square 0;
 #X obj 12 129 t b b b;
 #X obj 12 176 until;
@@ -235,7 +233,7 @@
 #X connect 42 2 6 0;
 #X connect 43 0 44 0;
 #X connect 44 0 40 0;
-#X restore 520 421 pd square;
+#X restore 520 401 pd square;
 #N canvas 250 146 237 573 pulse 0;
 #X obj 12 129 t b b b;
 #X obj 12 171 until;
@@ -322,7 +320,7 @@
 #X connect 34 0 4 0;
 #X connect 35 0 1 0;
 #X connect 36 0 26 0;
-#X restore 520 441 pd pulse;
+#X restore 520 421 pd pulse;
 #N canvas 501 82 239 565 sinepulse 0;
 #X obj 12 129 t b b b;
 #X obj 12 176 until;
@@ -425,7 +423,7 @@
 #X connect 41 0 22 0;
 #X connect 42 0 1 0;
 #X connect 43 0 24 0;
-#X restore 520 461 pd sinepulse;
+#X restore 520 441 pd sinepulse;
 #N canvas 501 82 239 586 halfpulse 0;
 #X obj 29 129 t b b b;
 #X obj 29 171 until;
@@ -524,7 +522,7 @@
 #X connect 40 0 1 0;
 #X connect 41 0 4 0;
 #X connect 42 0 13 1;
-#X restore 520 481 pd halfpulse;
+#X restore 520 461 pd halfpulse;
 #N canvas 501 82 209 485 res-saw 0;
 #X obj 12 129 t b b b;
 #X obj 12 176 until;
@@ -615,7 +613,7 @@
 #X connect 37 0 1 0;
 #X connect 38 0 7 1;
 #X connect 39 0 16 0;
-#X restore 520 501 pd res-saw;
+#X restore 520 481 pd res-saw;
 #N canvas 705 192 209 485 res-trapezoid 0;
 #X obj 12 129 t b b b;
 #X obj 12 176 until;
@@ -710,7 +708,7 @@
 #X connect 38 0 1 0;
 #X connect 39 0 16 0;
 #X connect 40 0 7 1;
-#X restore 520 541 pd res-trapezoid;
+#X restore 520 521 pd res-trapezoid;
 #N canvas 501 82 211 535 res-triangle 0;
 #X obj 12 129 t b b b;
 #X obj 12 176 until;
@@ -820,7 +818,7 @@
 #X connect 45 0 1 0;
 #X connect 46 0 16 0;
 #X connect 47 0 7 1;
-#X restore 520 521 pd res-triangle;
+#X restore 520 501 pd res-triangle;
 #N canvas 0 23 164 220 steps 0;
 #X obj 15 34 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -843,7 +841,7 @@
 #X connect 6 0 7 0;
 #X connect 6 1 7 1;
 #X connect 8 0 1 0;
-#X restore 520 381 pd steps;
+#X restore 520 361 pd steps;
 #N canvas 0 23 918 560 arrays 0;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0-1 33152 float 1;
@@ -33021,13 +33019,12 @@
 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127;
 #X coords 0 127 127 0 128 128 1 0 0;
 #X restore 562 22 graph;
-#X restore 520 561 pd arrays;
-#X obj 10 473 *~ 0.7;
-#X obj 17 634 r \$0-redraw;
-#X obj 17 676 s camomile;
-#X msg 17 655 gui redraw;
+#X restore 520 541 pd arrays;
+#X obj 17 584 r \$0-redraw;
+#X obj 17 626 s camomile;
+#X msg 17 605 gui redraw;
 #X obj 27 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-2 \$0-r-vsl-1-2 empty
-0 -9 0 10 -261906 -1 -1 0 1;
+0 -9 0 10 -261906 -1 -1 10000 1;
 #X obj 43 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-3 \$0-r-vsl-1-3 empty
 0 -9 0 10 -175295 -1 -1 0 1;
 #X obj 59 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-4 \$0-r-vsl-1-4 empty
@@ -33037,7 +33034,7 @@
 #X obj 91 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-6 \$0-r-vsl-1-6 empty
 0 -9 0 10 -1 -1 -1 0 1;
 #X obj 107 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-7 \$0-r-vsl-1-7 empty
-0 -9 0 10 -1 -1 -1 4800 1;
+0 -9 0 10 -1 -1 -1 0 1;
 #X obj 51 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-1-2 \$0-r-nbx-1-2 TIME 2
 0 -6 0 10 -261906 -1 -1 1 256;
 #X obj 91 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-1-3 \$0-r-nbx-1-3 TIME 3
@@ -33061,12 +33058,12 @@
 #X obj 303 120 nbx 2 16 1 7 0 0 \$0-s-susnbx-2 \$0-r-susnbx-2 empty
 0 -8 0 10 -261906 -1 -1 2 256;
 #X obj 191 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-1 \$0-r-vsl-2-1 empty
-0 -9 0 10 -261906 -1 -1 0 1;
+0 -9 0 10 -261906 -1 -1 10000 1;
 #X obj 191 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-2-1 \$0-r-nbx-2-1 TIME 1
-0 -6 0 10 -261906 -1 -1 1 256;
+0 -6 0 10 -261906 -1 -1 250 256;
 #X text 189 86 DCW;
 #X obj 207 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-2 \$0-r-vsl-2-2 empty
-0 -9 0 10 -261906 -1 -1 0 1;
+0 -9 0 10 -261906 -1 -1 5100 1;
 #X obj 223 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-3 \$0-r-vsl-2-3 empty
 0 -9 0 10 -175295 -1 -1 0 1;
 #X obj 239 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-4 \$0-r-vsl-2-4 empty
@@ -33074,13 +33071,13 @@
 #X obj 255 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-5 \$0-r-vsl-2-5 empty
 0 -9 0 10 -1 -1 -1 0 1;
 #X obj 271 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-6 \$0-r-vsl-2-6 empty
-0 -9 0 10 -1 -1 -1 5700 1;
+0 -9 0 10 -1 -1 -1 0 1;
 #X obj 287 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-7 \$0-r-vsl-2-7 empty
 0 -9 0 10 -1 -1 -1 0 1;
 #X obj 231 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-2-2 \$0-r-nbx-2-2 TIME 2
-0 -6 0 10 -261906 -1 -1 1 256;
+0 -6 0 10 -261906 -1 -1 250 256;
 #X obj 271 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-2-3 \$0-r-nbx-2-3 TIME 3
-0 -6 0 10 -175295 -1 -1 1 256;
+0 -6 0 10 -175295 -1 -1 250 256;
 #X obj 311 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-2-4 \$0-r-nbx-2-4 TIME 4
 0 -6 0 10 -1 -1 -1 1 256;
 #X obj 191 330 nbx 4 16 1 9999 0 0 \$0-s-nbx-2-5 \$0-r-nbx-2-5 TIME 5
@@ -33092,34 +33089,34 @@
 #X obj 311 330 nbx 4 16 1 9999 0 0 \$0-s-nbx-2-8 \$0-r-nbx-2-8 TIME 8
 0 -6 0 10 -1 -1 -1 1 256;
 #X obj 371 120 hradio 16 1 0 7 \$0-s-sus-3 \$0-r-sus-3 SUSTAIN 0 -6
-0 10 -261906 -1 -1 1;
+0 10 -261906 -1 -1 0;
 #X obj 387 150 hradio 16 1 0 7 \$0-s-end-3 \$0-r-end-3 END 0 -6 0 10
 -175295 -1 -1 1;
 #X obj 499 150 nbx 2 16 2 8 0 0 \$0-s-endnbx-3 \$0-r-endnbx-3 empty
 0 -8 0 10 -175295 -1 -1 3 256;
 #X obj 483 120 nbx 2 16 1 7 0 0 \$0-s-susnbx-3 \$0-r-susnbx-3 empty
-0 -8 0 10 -261906 -1 -1 2 256;
+0 -8 0 10 -261906 -1 -1 1 256;
 #X obj 371 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-1 \$0-r-vsl-3-1 empty
-0 -9 0 10 -261906 -1 -1 0 1;
+0 -9 0 10 -261906 -1 -1 10000 1;
 #X obj 371 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-3-1 \$0-r-nbx-3-1 TIME 1
-0 -6 0 10 -261906 -1 -1 1 256;
+0 -6 0 10 -261906 -1 -1 5 256;
 #X text 369 86 DCA;
 #X obj 387 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-2 \$0-r-vsl-3-2 empty
-0 -9 0 10 -261906 -1 -1 0 1;
+0 -9 0 10 -175295 -1 -1 6300 1;
 #X obj 403 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-3 \$0-r-vsl-3-3 empty
 0 -9 0 10 -175295 -1 -1 0 1;
 #X obj 419 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-4 \$0-r-vsl-3-4 empty
-0 -9 0 10 -1 -1 -1 4900 1;
+0 -9 0 10 -1 -1 -1 0 1;
 #X obj 435 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-5 \$0-r-vsl-3-5 empty
-0 -9 0 10 -1 -1 -1 4900 1;
+0 -9 0 10 -1 -1 -1 0 1;
 #X obj 451 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-6 \$0-r-vsl-3-6 empty
 0 -9 0 10 -1 -1 -1 0 1;
 #X obj 467 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-7 \$0-r-vsl-3-7 empty
 0 -9 0 10 -1 -1 -1 0 1;
 #X obj 411 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-3-2 \$0-r-nbx-3-2 TIME 2
-0 -6 0 10 -261906 -1 -1 1 256;
+0 -6 0 10 -175295 -1 -1 250 256;
 #X obj 451 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-3-3 \$0-r-nbx-3-3 TIME 3
-0 -6 0 10 -175295 -1 -1 1 256;
+0 -6 0 10 -175295 -1 -1 250 256;
 #X obj 491 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-3-4 \$0-r-nbx-3-4 TIME 4
 0 -6 0 10 -1 -1 -1 1 256;
 #X obj 371 330 nbx 4 16 1 9999 0 0 \$0-s-nbx-3-5 \$0-r-nbx-3-5 TIME 5
@@ -33262,7 +33259,7 @@
 #X connect 63 0 64 2;
 #X connect 64 0 66 0;
 #X connect 66 0 65 1;
-#X restore 425 528 pd sus-end-1;
+#X restore 425 508 pd sus-end-1;
 #N canvas 5 443 561 319 sus-end-2 0;
 #X obj 12 33 + 1;
 #X obj 132 33 + 2;
@@ -33324,7 +33321,7 @@
 #X connect 30 0 31 0;
 #X connect 31 0 14 0;
 #X connect 31 0 23 0;
-#X restore 425 548 pd sus-end-2;
+#X restore 425 528 pd sus-end-2;
 #N canvas 5 443 619 335 sus-end-3 0;
 #X obj 12 33 + 1;
 #X obj 132 33 + 2;
@@ -33386,7 +33383,7 @@
 #X connect 30 0 31 0;
 #X connect 31 0 15 0;
 #X connect 31 0 18 0;
-#X restore 425 568 pd sus-end-3;
+#X restore 425 548 pd sus-end-3;
 #N canvas 184 107 470 666 vsl-nbx-gui-1 0;
 #X obj 12 417 *;
 #X obj 107 401 *;
@@ -33535,9 +33532,9 @@
 #X connect 47 0 38 0;
 #X connect 48 0 39 0;
 #X connect 49 0 39 0;
-#X restore 165 588 pd vsl-nbx-gui-1;
+#X restore 165 568 pd vsl-nbx-gui-1;
 #X obj 481 90 hradio 16 1 1 3 \$0-s-lin \$0-r-lin LINE 0 -6 0 10 -204786
--1 -1 1;
+-1 -1 0;
 #N canvas 117 62 498 259 lbl-wav 0;
 #X obj 12 52 r \$0-s-wav;
 #X obj 139 94 text define -k \$0-wav;
@@ -33582,26 +33579,26 @@
 #X connect 16 1 18 1;
 #X connect 17 0 16 0;
 #X connect 19 0 20 0;
-#X restore 295 588 pd lbl-wav;
-#X obj 51 90 hradio 15 1 0 8 \$0-s-wav \$0-r-wav SAW 0 -8 0 10 -232576
--1 -1 0;
+#X restore 295 568 pd lbl-wav;
+#X obj 221 90 hradio 15 1 0 8 \$0-s-wav \$0-r-wav PULSE 0 -6 0 10 -232576
+-1 -1 2;
 #N canvas 619 224 407 224 arrays 0;
 #X obj 12 12 array define -k \$0-vsl-1-1 9;
-#A 0 0 0 0 0 0 0 0 0 0;
+#A 0 0 0 1 0 0 0 0 0 0;
 #X obj 12 32 array define -k \$0-vsl-1-2 9;
 #A 0 0 0 0 0 0 0 0 0.48 0;
 #X obj 12 52 array define -k \$0-vsl-1-3 9;
-#A 0 0 0.41 0.59 0.29 0.02 0.18 -0.98 0 0;
+#A 0 0 0 1 0 0.02 0.18 -0.98 0 0;
 #X obj 12 82 array define -k \$0-vsl-2-1 9;
 #A 0 0 1 0.51 0 0 0 0 0 0;
 #X obj 12 102 array define -k \$0-vsl-2-2 9;
 #A 0 0 0 0 0 0 0 0.57 0 0;
 #X obj 12 122 array define -k \$0-vsl-2-3 9;
-#A 0 0 0 0.58 0 1 0 0.6 0 0;
+#A 0 0 1 0.58 0 1 0 0.6 0 0;
 #X obj 12 152 array define -k \$0-vsl-3-1 9;
 #A 0 0 1 0.63 0 0 0 0 0 0;
 #X obj 12 172 array define -k \$0-vsl-3-2 9;
-#A 0 0 0 0 0 0.49 0.49 0 0 0;
+#A 0 0 1 1 0 0.49 0.49 0 0 0;
 #X obj 12 192 array define -k \$0-vsl-3-3 9;
 #A 0 0 1 0.54 0 0 0 0.52 1 0;
 #X obj 202 12 array define -k \$0-nbx-1-1 9;
@@ -33609,26 +33606,26 @@
 #X obj 202 32 array define -k \$0-nbx-1-2 9;
 #A 0 0 0 0 0 0 0 0 0 0;
 #X obj 202 52 array define -k \$0-nbx-1-3 9;
-#A 0 0 0 35 0 0 0 0 0 0;
+#A 0 0 0 1 0 0 0 0 0 0;
 #X obj 202 82 array define -k \$0-nbx-2-1 9;
 #A 0 0 250 250 250 0 0 0 0 0;
 #X obj 202 102 array define -k \$0-nbx-2-2 9;
 #A 0 0 0 0 0 0 0 0 0 0;
 #X obj 202 122 array define -k \$0-nbx-2-3 9;
-#A 0 0 0 200 0 0 0 0 0 0;
+#A 0 0 250 250 250 0 0 0 0 0;
 #X obj 202 152 array define -k \$0-nbx-3-1 9;
-#A 0 0 20 250 250 0 0 0 0 0;
+#A 0 0 5 250 250 0 0 0 0 0;
 #X obj 202 172 array define -k \$0-nbx-3-2 9;
-#A 0 0 0 0 0 0 0 0 0 0;
+#A 0 0 5 250 5 0 0 0 0 0;
 #X obj 202 192 array define -k \$0-nbx-3-3 9;
-#A 0 0 0 200 0 0 0 0 0 0;
-#X restore 165 508 pd arrays;
-#X obj 165 528 write-read \$0 vsl 1;
-#X obj 165 548 write-read \$0 vsl 2;
-#X obj 165 568 write-read \$0 vsl 3;
-#X obj 295 528 write-read \$0 nbx 1;
-#X obj 295 548 write-read \$0 nbx 2;
-#X obj 295 568 write-read \$0 nbx 3;
+#A 0 0 5 200 5 0 0 0 0 0;
+#X restore 165 488 pd arrays;
+#X obj 165 508 write-read \$0 vsl 1;
+#X obj 165 528 write-read \$0 vsl 2;
+#X obj 165 548 write-read \$0 vsl 3;
+#X obj 295 508 write-read \$0 nbx 1;
+#X obj 295 528 write-read \$0 nbx 2;
+#X obj 295 548 write-read \$0 nbx 3;
 #N canvas 562 163 687 519 startup 0;
 #X obj 171 6 loadbang;
 #X msg 12 316 8;
@@ -33691,17 +33688,23 @@
 #X msg 318 453 symbol \$2-nbx-\$3-\$4-\$1;
 #X obj 12 474 s;
 #X obj 171 27 t b b;
-#X obj 332 71 until;
-#X obj 332 92 i;
-#X obj 362 92 + 1;
-#X obj 332 134 + 1;
-#X msg 332 50 3;
-#X obj 332 113 % 3;
-#X obj 332 155 t f f;
-#X obj 332 176 tabread \$0-wav;
-#X obj 332 197 s;
-#X obj 444 158 pack f \$0;
-#X msg 444 179 symbol \$2-wav-\$1;
+#X obj 312 51 until;
+#X obj 312 72 i;
+#X obj 342 72 + 1;
+#X obj 312 114 + 1;
+#X msg 312 30 3;
+#X obj 312 93 % 3;
+#X obj 312 135 t f f;
+#X obj 312 156 tabread \$0-wav;
+#X obj 312 188 s;
+#X obj 424 151 pack f \$0;
+#X msg 424 172 symbol \$2-wav-\$1;
+#X obj 342 217 s;
+#X obj 342 196 tabread \$0-tun;
+#X msg 434 201 symbol \$2-tun-\$1;
+#X obj 382 247 s;
+#X obj 382 226 tabread \$0-vol;
+#X msg 474 231 symbol \$2-vol-\$1;
 #X connect 0 0 60 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -33784,11 +33787,19 @@
 #X connect 66 0 63 0;
 #X connect 66 0 64 0;
 #X connect 67 0 68 0;
+#X connect 67 0 73 0;
+#X connect 67 0 76 0;
 #X connect 67 1 70 0;
 #X connect 68 0 69 0;
 #X connect 70 0 71 0;
+#X connect 70 0 74 0;
+#X connect 70 0 77 0;
 #X connect 71 0 69 1;
-#X restore 165 488 pd startup;
+#X connect 73 0 72 0;
+#X connect 74 0 72 1;
+#X connect 76 0 75 0;
+#X connect 77 0 75 1;
+#X restore 165 468 pd startup;
 #N canvas 4 23 450 300 voice 0;
 #X obj 74 55 inlet;
 #X obj 74 76 voice \$0 1;
@@ -33801,9 +33812,8 @@
 #X connect 1 0 4 0;
 #X connect 2 0 4 0;
 #X connect 3 0 4 0;
-#X restore 10 431 pd voice;
-#X obj 70 389 r \$0-poly;
-#X obj 70 452 /~ 4;
+#X restore 10 411 pd voice;
+#X obj 70 369 r \$0-poly;
 #N canvas 4 23 450 300 voice 0;
 #X obj 74 55 inlet;
 #X obj 74 76 voice \$0 1;
@@ -33816,9 +33826,8 @@
 #X connect 1 0 4 0;
 #X connect 2 0 4 0;
 #X connect 3 0 4 0;
-#X restore 70 431 pd voice;
-#X obj 130 389 r \$0-poly;
-#X obj 130 452 /~ 4;
+#X restore 70 411 pd voice;
+#X obj 130 369 r \$0-poly;
 #N canvas 4 23 450 300 voice 0;
 #X obj 74 55 inlet;
 #X obj 74 76 voice \$0 1;
@@ -33831,9 +33840,8 @@
 #X connect 1 0 4 0;
 #X connect 2 0 4 0;
 #X connect 3 0 4 0;
-#X restore 130 431 pd voice;
-#X obj 190 389 r \$0-poly;
-#X obj 190 452 /~ 4;
+#X restore 130 411 pd voice;
+#X obj 190 369 r \$0-poly;
 #N canvas 4 23 450 300 voice 0;
 #X obj 74 55 inlet;
 #X obj 74 76 voice \$0 1;
@@ -33846,37 +33854,93 @@
 #X connect 1 0 4 0;
 #X connect 2 0 4 0;
 #X connect 3 0 4 0;
-#X restore 190 431 pd voice;
-#X obj 70 410 route 2;
-#X obj 130 410 route 3;
-#X obj 190 410 route 4;
-#X connect 0 0 18 0;
-#X connect 0 1 18 1;
+#X restore 190 411 pd voice;
+#X obj 70 390 route 2;
+#X obj 130 390 route 3;
+#X obj 190 390 route 4;
+#X obj 10 432 /~ 3;
+#X obj 70 432 /~ 3;
+#X obj 130 432 /~ 3;
+#X obj 190 432 /~ 3;
+#X obj 10 453 /~ 4;
+#X obj 41 89 nbx 5 16 -1e+37 1e+37 0 0 \$0-s-tun \$0-r-tun TUNE 0 -6
+0 10 -262144 -1 -1 0 256;
+#N canvas 427 330 218 241 tun 0;
+#X obj 12 172 s;
+#X obj 86 135 pack f \$0;
+#X obj 59 33 t f f;
+#X obj 59 12 r \$0-lin;
+#X msg 59 75 set \$1;
+#X obj 59 96 s \$0-r-tun;
+#X obj 59 54 tabread \$0-tun;
+#X obj 12 213 array define -k \$0-tun 4;
+#A 0 0 0 0 0;
+#X msg 86 156 symbol \$2-tun-\$1;
+#X obj 12 151 r \$0-s-tun;
+#X obj 12 193 tabwrite \$0-tun;
+#X connect 1 0 8 0;
+#X connect 2 0 6 0;
+#X connect 2 1 1 0;
+#X connect 2 1 10 1;
+#X connect 3 0 2 0;
+#X connect 4 0 5 0;
+#X connect 6 0 4 0;
+#X connect 8 0 0 1;
+#X connect 9 0 0 0;
+#X connect 9 0 10 0;
+#X restore 295 588 pd tun;
+#X obj 401 89 nbx 5 16 -100 12 0 0 \$0-s-vol \$0-r-vol VOLUME 0 -6
+0 10 -262144 -1 -1 0 256;
+#N canvas 427 330 218 241 vol 0;
+#X obj 12 172 s;
+#X obj 86 135 pack f \$0;
+#X obj 59 33 t f f;
+#X obj 59 12 r \$0-lin;
+#X msg 59 75 set \$1;
+#X obj 12 213 array define -k \$0-vol 4;
+#A 0 0 0 0 0;
+#X obj 12 193 tabwrite \$0-vol;
+#X obj 12 151 r \$0-s-vol;
+#X msg 86 156 symbol \$2-vol-\$1;
+#X obj 59 96 s \$0-r-vol;
+#X obj 59 54 tabread \$0-vol;
+#X connect 1 0 8 0;
+#X connect 2 0 10 0;
+#X connect 2 1 1 0;
+#X connect 2 1 6 1;
+#X connect 3 0 2 0;
+#X connect 4 0 9 0;
+#X connect 7 0 0 0;
+#X connect 7 0 6 0;
+#X connect 8 0 0 1;
+#X connect 10 0 4 0;
+#X restore 295 608 pd vol;
+#X connect 0 0 16 0;
+#X connect 0 1 16 1;
 #X connect 1 0 2 0;
 #X connect 3 0 4 0;
-#X connect 4 0 101 0;
+#X connect 4 0 98 0;
 #X connect 5 0 8 0;
 #X connect 8 0 6 0;
 #X connect 8 0 6 1;
-#X connect 9 0 5 0;
-#X connect 10 0 29 0;
-#X connect 18 0 1 0;
-#X connect 18 1 1 1;
-#X connect 18 2 1 2;
-#X connect 29 0 9 0;
-#X connect 30 0 32 0;
-#X connect 32 0 31 0;
-#X connect 101 0 10 0;
-#X connect 102 0 111 0;
-#X connect 103 0 29 0;
-#X connect 104 0 103 0;
-#X connect 105 0 112 0;
-#X connect 106 0 29 0;
-#X connect 107 0 106 0;
-#X connect 108 0 113 0;
-#X connect 109 0 29 0;
-#X connect 110 0 109 0;
-#X connect 111 0 104 0;
-#X connect 112 0 107 0;
-#X connect 113 0 110 0;
+#X connect 16 0 1 0;
+#X connect 16 1 1 1;
+#X connect 16 2 1 2;
+#X connect 27 0 29 0;
+#X connect 29 0 28 0;
+#X connect 98 0 108 0;
+#X connect 99 0 105 0;
+#X connect 100 0 109 0;
+#X connect 101 0 106 0;
+#X connect 102 0 110 0;
+#X connect 103 0 107 0;
+#X connect 104 0 111 0;
+#X connect 105 0 100 0;
+#X connect 106 0 102 0;
+#X connect 107 0 104 0;
+#X connect 108 0 112 0;
+#X connect 109 0 112 0;
+#X connect 110 0 112 0;
+#X connect 111 0 112 0;
+#X connect 112 0 5 0;
 #X coords 0 -1 1 1 650 350 2 3 0;
