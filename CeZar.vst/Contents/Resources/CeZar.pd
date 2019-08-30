@@ -1,4 +1,4 @@
-#N canvas 162 55 666 723 10;
+#N canvas 271 30 666 723 10;
 #X obj 91 508 notein;
 #X obj 91 550 pack f f f;
 #X obj 91 571 s \$0-poly;
@@ -22,7 +22,7 @@
 #X obj 123 120 nbx 2 16 1 7 0 0 \$0-s-susnbx-1 \$0-r-susnbx-1 empty
 0 -8 0 10 -261906 -1 -1 2 256;
 #X obj 11 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-1 \$0-r-vsl-1-1 empty
-0 -9 0 10 -261906 -1 -1 4100 1;
+0 -9 0 10 -261906 -1 -1 0 1;
 #X obj 11 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-1-1 \$0-r-nbx-1-1 TIME 1
 0 -6 0 10 -261906 -1 -1 1 256;
 #X text 9 86 DCO;
@@ -33027,19 +33027,19 @@
 #X obj 17 676 s camomile;
 #X msg 17 655 gui redraw;
 #X obj 27 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-2 \$0-r-vsl-1-2 empty
-0 -9 0 10 -261906 -1 -1 5900 1;
+0 -9 0 10 -261906 -1 -1 0 1;
 #X obj 43 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-3 \$0-r-vsl-1-3 empty
-0 -9 0 10 -175295 -1 -1 2900 1;
+0 -9 0 10 -175295 -1 -1 0 1;
 #X obj 59 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-4 \$0-r-vsl-1-4 empty
-0 -9 0 10 -1 -1 -1 200 1;
+0 -9 0 10 -1 -1 -1 0 1;
 #X obj 75 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-5 \$0-r-vsl-1-5 empty
-0 -9 0 10 -1 -1 -1 1800 1;
+0 -9 0 10 -1 -1 -1 0 1;
 #X obj 91 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-6 \$0-r-vsl-1-6 empty
 0 -9 0 10 -1 -1 -1 0 1;
 #X obj 107 178 vsl 16 101 0 1 0 0 \$0-s-vsl-1-7 \$0-r-vsl-1-7 empty
-0 -9 0 10 -1 -1 -1 0 1;
+0 -9 0 10 -1 -1 -1 4800 1;
 #X obj 51 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-1-2 \$0-r-nbx-1-2 TIME 2
-0 -6 0 10 -261906 -1 -1 35 256;
+0 -6 0 10 -261906 -1 -1 1 256;
 #X obj 91 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-1-3 \$0-r-nbx-1-3 TIME 3
 0 -6 0 10 -175295 -1 -1 1 256;
 #X obj 131 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-1-4 \$0-r-nbx-1-4 TIME 4
@@ -33066,19 +33066,19 @@
 0 -6 0 10 -261906 -1 -1 1 256;
 #X text 189 86 DCW;
 #X obj 207 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-2 \$0-r-vsl-2-2 empty
-0 -9 0 10 -261906 -1 -1 5800 1;
+0 -9 0 10 -261906 -1 -1 0 1;
 #X obj 223 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-3 \$0-r-vsl-2-3 empty
 0 -9 0 10 -175295 -1 -1 0 1;
 #X obj 239 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-4 \$0-r-vsl-2-4 empty
-0 -9 0 10 -1 -1 -1 10000 1;
+0 -9 0 10 -1 -1 -1 0 1;
 #X obj 255 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-5 \$0-r-vsl-2-5 empty
 0 -9 0 10 -1 -1 -1 0 1;
 #X obj 271 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-6 \$0-r-vsl-2-6 empty
-0 -9 0 10 -1 -1 -1 6000 1;
+0 -9 0 10 -1 -1 -1 5700 1;
 #X obj 287 178 vsl 16 101 0 1 0 0 \$0-s-vsl-2-7 \$0-r-vsl-2-7 empty
 0 -9 0 10 -1 -1 -1 0 1;
 #X obj 231 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-2-2 \$0-r-nbx-2-2 TIME 2
-0 -6 0 10 -261906 -1 -1 200 256;
+0 -6 0 10 -261906 -1 -1 1 256;
 #X obj 271 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-2-3 \$0-r-nbx-2-3 TIME 3
 0 -6 0 10 -175295 -1 -1 1 256;
 #X obj 311 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-2-4 \$0-r-nbx-2-4 TIME 4
@@ -33100,24 +33100,24 @@
 #X obj 483 120 nbx 2 16 1 7 0 0 \$0-s-susnbx-3 \$0-r-susnbx-3 empty
 0 -8 0 10 -261906 -1 -1 2 256;
 #X obj 371 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-1 \$0-r-vsl-3-1 empty
-0 -9 0 10 -261906 -1 -1 10000 1;
+0 -9 0 10 -261906 -1 -1 0 1;
 #X obj 371 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-3-1 \$0-r-nbx-3-1 TIME 1
 0 -6 0 10 -261906 -1 -1 1 256;
 #X text 369 86 DCA;
 #X obj 387 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-2 \$0-r-vsl-3-2 empty
-0 -9 0 10 -261906 -1 -1 5400 1;
+0 -9 0 10 -261906 -1 -1 0 1;
 #X obj 403 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-3 \$0-r-vsl-3-3 empty
 0 -9 0 10 -175295 -1 -1 0 1;
 #X obj 419 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-4 \$0-r-vsl-3-4 empty
-0 -9 0 10 -1 -1 -1 0 1;
+0 -9 0 10 -1 -1 -1 4900 1;
 #X obj 435 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-5 \$0-r-vsl-3-5 empty
-0 -9 0 10 -1 -1 -1 0 1;
+0 -9 0 10 -1 -1 -1 4900 1;
 #X obj 451 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-6 \$0-r-vsl-3-6 empty
-0 -9 0 10 -1 -1 -1 5200 1;
+0 -9 0 10 -1 -1 -1 0 1;
 #X obj 467 178 vsl 16 101 0 1 0 0 \$0-s-vsl-3-7 \$0-r-vsl-3-7 empty
-0 -9 0 10 -1 -1 -1 10000 1;
+0 -9 0 10 -1 -1 -1 0 1;
 #X obj 411 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-3-2 \$0-r-nbx-3-2 TIME 2
-0 -6 0 10 -261906 -1 -1 200 256;
+0 -6 0 10 -261906 -1 -1 1 256;
 #X obj 451 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-3-3 \$0-r-nbx-3-3 TIME 3
 0 -6 0 10 -175295 -1 -1 1 256;
 #X obj 491 300 nbx 4 16 1 9999 0 0 \$0-s-nbx-3-4 \$0-r-nbx-3-4 TIME 4
@@ -33537,20 +33537,32 @@
 #X connect 49 0 39 0;
 #X restore 165 588 pd vsl-nbx-gui-1;
 #X obj 481 90 hradio 16 1 1 3 \$0-s-lin \$0-r-lin LINE 0 -6 0 10 -204786
--1 -1 2;
-#N canvas 117 62 281 216 lbl-wav 0;
-#X obj 12 12 r \$0-s-wav;
-#X obj 139 54 text define -k \$0-wav;
+-1 -1 1;
+#N canvas 117 62 498 259 lbl-wav 0;
+#X obj 12 52 r \$0-s-wav;
+#X obj 139 94 text define -k \$0-wav;
 #A set SAW \; SQUARE \; PULSE \; SINEPULSE \; HALFPULSE \; RES. SAW
 \; RES. TRIANGLE \; RES. TRAPEZOID \;;
-#X obj 39 54 text get \$0-wav;
-#X msg 39 138 label \$1;
-#X obj 39 159 s \$0-r-wav;
-#X obj 39 75 list trim;
-#X obj 39 96 fudiformat -u;
-#X obj 39 117 list tosymbol;
-#X obj 12 33 t b f;
-#X obj 12 180 s \$0-redraw;
+#X obj 39 94 text get \$0-wav;
+#X msg 39 178 label \$1;
+#X obj 39 199 s \$0-r-wav;
+#X obj 39 115 list trim;
+#X obj 39 136 fudiformat -u;
+#X obj 39 157 list tosymbol;
+#X obj 12 73 t b f;
+#X obj 12 220 s \$0-redraw;
+#X obj 289 154 r \$0-s-wav;
+#X obj 289 175 s;
+#X obj 363 138 pack f \$0;
+#X msg 363 159 symbol \$2-wav-\$1;
+#X obj 289 216 array define -k \$0-wav 4;
+#A 0 2 2 0 4;
+#X obj 336 57 tabread \$0-wav;
+#X obj 336 36 t f f;
+#X obj 336 15 r \$0-lin;
+#X obj 289 196 tabwrite \$0-wav;
+#X msg 336 78 set \$1;
+#X obj 336 99 s \$0-r-wav;
 #X connect 0 0 8 0;
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
@@ -33559,9 +33571,20 @@
 #X connect 7 0 3 0;
 #X connect 8 0 9 0;
 #X connect 8 1 2 0;
+#X connect 10 0 11 0;
+#X connect 10 0 18 0;
+#X connect 12 0 13 0;
+#X connect 13 0 11 1;
+#X connect 15 0 8 0;
+#X connect 15 0 19 0;
+#X connect 16 0 15 0;
+#X connect 16 1 12 0;
+#X connect 16 1 18 1;
+#X connect 17 0 16 0;
+#X connect 19 0 20 0;
 #X restore 295 588 pd lbl-wav;
-#X obj 51 90 hradio 16 1 1 8 \$0-s-wav \$0-r-wav SQUARE 0 -6 0 10 -203904
--1 -1 1;
+#X obj 51 90 hradio 15 1 0 8 \$0-s-wav \$0-r-wav SAW 0 -8 0 10 -232576
+-1 -1 0;
 #N canvas 619 224 407 224 arrays 0;
 #X obj 12 12 array define -k \$0-vsl-1-1 9;
 #A 0 0 0 0 0 0 0 0 0 0;
@@ -33607,67 +33630,78 @@
 #X obj 295 548 write-read \$0 nbx 2;
 #X obj 295 568 write-read \$0 nbx 3;
 #N canvas 562 163 687 519 startup 0;
-#X obj 102 12 loadbang;
-#X msg 12 306 8;
-#X obj 12 327 until;
-#X obj 12 348 i;
-#X obj 12 369 % 8;
-#X obj 42 348 + 1;
-#X obj 12 390 + 1;
-#X obj 12 411 t f f;
-#X obj 12 443 tabread;
-#X obj 152 369 pack f \$0 f;
-#X msg 152 390 set \$2-vsl-\$3-\$1;
-#X obj 68 427 pack f \$0 f f;
-#X obj 12 54 until;
-#X obj 12 75 i;
-#X obj 42 75 + 1;
-#X msg 12 33 3;
-#X obj 12 96 % 3;
-#X text 42 33 //line;
-#X obj 12 117 + 1;
-#X obj 12 138 t b f;
-#X obj 12 180 until;
-#X obj 12 201 i;
-#X obj 42 201 + 1;
-#X msg 12 159 3;
-#X obj 12 222 % 3;
-#X obj 12 243 + 1;
-#X text 42 159 //section;
-#X obj 12 264 t b f;
-#X text 42 306 //control;
-#X obj 262 427 tabread;
-#X obj 262 459 s;
-#X msg 262 390 set \$2-nbx-\$3-\$1;
-#X obj 202 61 until;
-#X obj 202 82 i;
-#X obj 232 82 + 1;
-#X obj 202 124 + 1;
-#X msg 202 40 3;
-#X obj 202 103 % 3;
-#X obj 202 187 until;
-#X obj 202 208 i;
-#X obj 232 208 + 1;
-#X obj 202 250 + 1;
-#X msg 202 166 3;
-#X obj 202 229 % 3;
-#X obj 202 145 t b f;
-#X obj 288 250 pack f \$0;
-#X msg 288 271 set \$2-susnbx-\$1;
-#X obj 202 271 t f f;
-#X obj 202 292 tabread;
-#X obj 202 334 s;
-#X msg 288 318 symbol \$2-susnbx-\$3-\$1;
-#X obj 288 297 pack f \$0 f;
-#X obj 442 292 tabread;
-#X obj 442 334 s;
-#X msg 442 271 set \$2-endnbx-\$1;
-#X msg 528 318 symbol \$2-endnbx-\$3-\$1;
-#X obj 12 485 print;
-#X msg 68 448 symbol \$2-vsl-\$3-\$4-\$1;
-#X msg 318 443 symbol \$2-nbx-\$3-\$4-\$1;
-#X obj 12 464 s;
-#X obj 102 33 t b b;
+#X obj 171 6 loadbang;
+#X msg 12 316 8;
+#X obj 12 337 until;
+#X obj 12 358 i;
+#X obj 12 379 % 8;
+#X obj 42 358 + 1;
+#X obj 12 400 + 1;
+#X obj 12 421 t f f;
+#X obj 12 453 tabread;
+#X obj 152 379 pack f \$0 f;
+#X msg 152 400 set \$2-vsl-\$3-\$1;
+#X obj 68 437 pack f \$0 f f;
+#X obj 12 64 until;
+#X obj 12 85 i;
+#X obj 42 85 + 1;
+#X msg 12 43 3;
+#X obj 12 106 % 3;
+#X text 42 43 //line;
+#X obj 12 127 + 1;
+#X obj 12 148 t b f;
+#X obj 12 190 until;
+#X obj 12 211 i;
+#X obj 42 211 + 1;
+#X msg 12 169 3;
+#X obj 12 232 % 3;
+#X obj 12 253 + 1;
+#X text 42 169 //section;
+#X obj 12 274 t b f;
+#X text 42 316 //control;
+#X obj 262 437 tabread;
+#X obj 262 469 s;
+#X msg 262 400 set \$2-nbx-\$3-\$1;
+#X obj 202 71 until;
+#X obj 202 92 i;
+#X obj 232 92 + 1;
+#X obj 202 134 + 1;
+#X msg 202 50 3;
+#X obj 202 113 % 3;
+#X obj 202 197 until;
+#X obj 202 218 i;
+#X obj 232 218 + 1;
+#X obj 202 260 + 1;
+#X msg 202 176 3;
+#X obj 202 239 % 3;
+#X obj 202 155 t b f;
+#X obj 288 260 pack f \$0;
+#X msg 288 281 set \$2-susnbx-\$1;
+#X obj 202 281 t f f;
+#X obj 202 302 tabread;
+#X obj 202 344 s;
+#X msg 288 328 symbol \$2-susnbx-\$3-\$1;
+#X obj 288 307 pack f \$0 f;
+#X obj 442 302 tabread;
+#X obj 442 344 s;
+#X msg 442 281 set \$2-endnbx-\$1;
+#X msg 528 328 symbol \$2-endnbx-\$3-\$1;
+#X obj 12 495 print;
+#X msg 68 458 symbol \$2-vsl-\$3-\$4-\$1;
+#X msg 318 453 symbol \$2-nbx-\$3-\$4-\$1;
+#X obj 12 474 s;
+#X obj 171 27 t b b;
+#X obj 332 71 until;
+#X obj 332 92 i;
+#X obj 362 92 + 1;
+#X obj 332 134 + 1;
+#X msg 332 50 3;
+#X obj 332 113 % 3;
+#X obj 332 155 t f f;
+#X obj 332 176 tabread \$0-wav;
+#X obj 332 197 s;
+#X obj 444 158 pack f \$0;
+#X msg 444 179 symbol \$2-wav-\$1;
 #X connect 0 0 60 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -33741,6 +33775,19 @@
 #X connect 58 0 30 1;
 #X connect 60 0 15 0;
 #X connect 60 1 36 0;
+#X connect 60 1 65 0;
+#X connect 61 0 62 0;
+#X connect 62 0 66 0;
+#X connect 63 0 62 1;
+#X connect 64 0 67 0;
+#X connect 65 0 61 0;
+#X connect 66 0 63 0;
+#X connect 66 0 64 0;
+#X connect 67 0 68 0;
+#X connect 67 1 70 0;
+#X connect 68 0 69 0;
+#X connect 70 0 71 0;
+#X connect 71 0 69 1;
 #X restore 165 488 pd startup;
 #N canvas 4 23 450 300 voice 0;
 #X obj 74 55 inlet;
